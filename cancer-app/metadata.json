@@ -1,0 +1,53 @@
+{
+  "accuracy": 0.895,
+  "confusion_matrix": [
+    [
+      38,
+      4
+    ],
+    [
+      8,
+      64
+    ]
+  ],
+  "train_size": 455,
+  "test_size": 114,
+  "features": [
+    {
+      "name": "mean radius",
+      "min": 6.981,
+      "max": 28.11,
+      "mean": 14.1273
+    },
+    {
+      "name": "mean texture",
+      "min": 9.71,
+      "max": 39.28,
+      "mean": 19.2896
+    },
+    {
+      "name": "mean area",
+      "min": 143.5,
+      "max": 2501.0,
+      "mean": 654.8891
+    },
+    {
+      "name": "mean smoothness",
+      "min": 0.0526,
+      "max": 0.1634,
+      "mean": 0.0964
+    },
+    {
+      "name": "mean concavity",
+      "min": 0.0,
+      "max": 0.4268,
+      "mean": 0.0888
+    },
+    {
+      "name": "mean symmetry",
+      "min": 0.106,
+      "max": 0.304,
+      "mean": 0.1812
+    }
+  ]
+}

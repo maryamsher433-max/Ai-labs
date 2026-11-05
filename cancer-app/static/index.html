@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tumour Classifier</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>Tumour Classifier <span class="badge" id="status">connecting…</span></h1>
+  <p class="sub">Move the sliders. Every change is sent to the FastAPI backend and the model answers instantly.</p>
+
+  <div class="grid">
+    <section class="card">
+      <h2>Measurements</h2>
+      <div id="sliders"></div>
+      <div class="btns">
+        <button id="reset">Reset to average</button>
+        <button id="random">Random sample</button>
+        <button id="save" class="primary">Save to history</button>
+      </div>
+    </section>
+
+    <div class="col">
+      <section class="card center">
+        <h2>Prediction</h2>
+        <div id="label" class="label">–</div>
+        <div id="prob" class="prob"></div>
+        <div class="meter"><div id="fill"></div></div>
+        <div class="ticks"><span>Malignant</span><span>Benign</span></div>
+      </section>
+
+      <section class="card">
+        <h2>Why this result?</h2>
+        <div id="why" class="why"></div>
+        <p class="note">Green pushes toward Benign, red toward Malignant.</p>
+      </section>
+    </div>
+  </div>
+
+  <section class="card">
+    <h2>History <small id="count"></small></h2>
+    <table>
+      <thead><tr id="thead"></tr></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <button id="clear" class="small">Clear history</button>
+  </section>
+
+  <section class="card">
+    <h2>Model quality</h2>
+    <div id="quality"></div>
+  </section>
+
+  <p class="warn">Educational demo only, not for medical use.</p>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>
