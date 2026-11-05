@@ -34,8 +34,8 @@ Labs 1 and 5 are not included in this repository.
 ## Run locally
 
 ```bash
-git clone https://github.com/ahtresham-sys/Ai-lab-works.git
-cd Ai-lab-works/diabetes-app      # or cancer-app
+git clone https://github.com/maryamsher433-max/Ai-labs.git
+cd Ai-labs/diabetes-app    # or cancer-app
 python -m pip install -r requirements.txt
 python train.py                   # cancer-app only
 python -m uvicorn main:app --reload --port 8000
@@ -48,4 +48,4 @@ Open http://localhost:8000 for the app and http://localhost:8000/docs for the AP
 - Educational projects only, not medical advice.
 
 ## Author
-**Ahtesham**: [GitHub](https://github.com/ahtresham-sys)
+**Maryam Sher**: [GitHub](https://github.com/maryamsher433-max)
